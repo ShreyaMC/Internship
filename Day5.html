@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // variables
+        var a = "RunShaw";
+        var b = 9;
+        var c = 26.4;
+        var d = 1.746848372723445464657;
+        var e = true;
+        var e = false;
+        var f = null;
+        var g = undefined;
+        var h;
+        var year;
+
+        // prompt
+        prompt("Enter your name?");
+        var name = prompt("Enter your name:");
+
+
+        // alert
+        alert("Hi!");      // Hi!
+        alert(a+b);        // RunShaw9
+        alert(b+c);        // 35.4
+        alert("86"/"2");   // 43
+        alert(h);          // undefined
+
+
+        // Condition
+        let age = 21;
+        let accessAllowed = (age<18) ? true : false;
+        alert(accessAllowed);                        // false
+
+        if (year == 2021) {
+            alert("That's correct!");
+        }
+        else{
+            alert( "You're so smart!" );    // You're so smart!
+        }
+
+
+        // Loops
+        // while
+        let i = 0;
+        while (i < 2) {  // shows 0, then 1                             
+            alert( i );
+            i++;
+        } 
+         
+        
+        // for
+        for(let i=0; i<2; i++) {
+                alert(i);
+            }
+            
+            
+        // function
+        let sum = function(a,b) {
+            return a*b;
+        };
+        alert(sum(2,3)); // 6
+
+
+        // arrow funtion
+        let add = (x,y) => x+y;
+        alert(add(56,22)); // 78
+        
+    </script>
+</body>
+</html>
